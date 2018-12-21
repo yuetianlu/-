@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         template()
         // 外观模式
         facade()
+        // 建造者模式
+        builder()
     }
     
     // 策略模式
@@ -108,6 +110,13 @@ class ViewController: UIViewController {
     // 外观模式
     func facade() {
         Robot.createRobot()
+    }
+    
+    // 建造者模式
+    func builder() {
+        let builder = LabelBuilder.init(text: "建造者", color: .red, rect: CGRect(x: 100, y: 100, width: view.frame.width - 200, height: 30))
+        let label = LabelDirector.createLableWithBuilder(builder: builder)
+        view.addSubview(label)
     }
 }
 

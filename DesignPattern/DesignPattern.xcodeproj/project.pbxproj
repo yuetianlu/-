@@ -19,6 +19,7 @@
 		8C64D9AA21CCCD2B00C20710 /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C64D9A921CCCD2B00C20710 /* Prototype.swift */; };
 		8C64D9AC21CCD13B00C20710 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C64D9AB21CCD13B00C20710 /* Template.swift */; };
 		8CAEC30B21CCD8A3005A6320 /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC30A21CCD8A3005A6320 /* Facade.swift */; };
+		8CAEC30D21CCDB7F005A6320 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC30C21CCDB7F005A6320 /* Builder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		8C64D9A921CCCD2B00C20710 /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
 		8C64D9AB21CCD13B00C20710 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
 		8CAEC30A21CCD8A3005A6320 /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
+		8CAEC30C21CCDB7F005A6320 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				8C64D9A921CCCD2B00C20710 /* Prototype.swift */,
 				8C64D9AB21CCD13B00C20710 /* Template.swift */,
 				8CAEC30A21CCD8A3005A6320 /* Facade.swift */,
+				8CAEC30C21CCDB7F005A6320 /* Builder.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				8C64D9AC21CCD13B00C20710 /* Template.swift in Sources */,
 				8C64D9A021CCBC0600C20710 /* Strategy.swift in Sources */,
 				8C64D9A621CCC6F700C20710 /* Proxy.swift in Sources */,
+				8CAEC30D21CCDB7F005A6320 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
