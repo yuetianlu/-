@@ -30,6 +30,8 @@ class ViewController: UIViewController {
         builder()
         // 观察者模式
         observer()
+        // 抽象工厂模式
+        abstractFactory()
     }
     
     // 策略模式
@@ -132,6 +134,14 @@ class ViewController: UIViewController {
         
         reception.noticeLev1()
         reception.noticeLev2()
+    }
+    
+    // 抽象工厂模式
+    func abstractFactory() {
+        let tv = AbstractFactory.createPruduct(.Television)
+        let bx = AbstractFactory.createPruduct(.Refrigerator)
+        tv.showYouself()
+        bx.showYouself()
     }
 }
 
