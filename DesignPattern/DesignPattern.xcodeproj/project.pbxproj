@@ -18,6 +18,7 @@
 		8C64D9A821CCCA4A00C20710 /* FactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C64D9A721CCCA4A00C20710 /* FactoryMethod.swift */; };
 		8C64D9AA21CCCD2B00C20710 /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C64D9A921CCCD2B00C20710 /* Prototype.swift */; };
 		8C64D9AC21CCD13B00C20710 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C64D9AB21CCD13B00C20710 /* Template.swift */; };
+		8CAEC30B21CCD8A3005A6320 /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC30A21CCD8A3005A6320 /* Facade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		8C64D9A721CCCA4A00C20710 /* FactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethod.swift; sourceTree = "<group>"; };
 		8C64D9A921CCCD2B00C20710 /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
 		8C64D9AB21CCD13B00C20710 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		8CAEC30A21CCD8A3005A6320 /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				8C64D9A721CCCA4A00C20710 /* FactoryMethod.swift */,
 				8C64D9A921CCCD2B00C20710 /* Prototype.swift */,
 				8C64D9AB21CCD13B00C20710 /* Template.swift */,
+				8CAEC30A21CCD8A3005A6320 /* Facade.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CAEC30B21CCD8A3005A6320 /* Facade.swift in Sources */,
 				8C64D98F21CCBA5600C20710 /* ViewController.swift in Sources */,
 				8C64D9A321CCC31000C20710 /* Decorator.swift in Sources */,
 				8C64D9AA21CCCD2B00C20710 /* Prototype.swift in Sources */,

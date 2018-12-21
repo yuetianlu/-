@@ -24,6 +24,8 @@ class ViewController: UIViewController {
         prototype()
         // 模板方法
         template()
+        // 外观模式
+        facade()
     }
     
     // 策略模式
@@ -101,6 +103,11 @@ class ViewController: UIViewController {
         
         let b = PersonB()
         b.question()
+    }
+    
+    // 外观模式
+    func facade() {
+        Robot.createRobot()
     }
 }
 
