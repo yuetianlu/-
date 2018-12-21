@@ -34,6 +34,8 @@ class ViewController: UIViewController {
         abstractFactory()
         // 状态模式
         state()
+        // 适配器模式
+        adpater()
     }
     
     // 策略模式
@@ -159,6 +161,23 @@ class ViewController: UIViewController {
         let normal = State(mood: .normal)
         programmer.state = normal
         programmer.programming()
+    }
+    
+    // 适配器模式
+    func adpater() {
+        let gameA = GameA()
+        let gameB = GameB()
+        let adapterA = AdapterGameA(gameA)
+        let adapterB = AdapterGameB(gameB)
+        adapterA.a()
+        adapterA.s()
+        adapterA.d()
+        adapterA.w()
+        
+        adapterB.a()
+        adapterB.s()
+        adapterB.d()
+        adapterB.w()
     }
 }
 
