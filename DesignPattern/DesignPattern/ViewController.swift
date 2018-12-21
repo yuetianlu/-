@@ -28,6 +28,8 @@ class ViewController: UIViewController {
         facade()
         // 建造者模式
         builder()
+        // 观察者模式
+        observer()
     }
     
     // 策略模式
@@ -117,6 +119,19 @@ class ViewController: UIViewController {
         let builder = LabelBuilder.init(text: "建造者", color: .red, rect: CGRect(x: 100, y: 100, width: view.frame.width - 200, height: 30))
         let label = LabelDirector.createLableWithBuilder(builder: builder)
         view.addSubview(label)
+    }
+    
+    // 观察者模式
+    func observer() {
+        let staff = Staff()
+        let staffA = StaffA()
+        let staffB = StaffB()
+        
+        let reception = Reception()
+        reception.observers = [staff, staffA, staffB]
+        
+        reception.noticeLev1()
+        reception.noticeLev2()
     }
 }
 
