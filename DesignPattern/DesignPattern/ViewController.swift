@@ -32,6 +32,8 @@ class ViewController: UIViewController {
         observer()
         // 抽象工厂模式
         abstractFactory()
+        // 状态模式
+        state()
     }
     
     // 策略模式
@@ -142,6 +144,21 @@ class ViewController: UIViewController {
         let bx = AbstractFactory.createPruduct(.Refrigerator)
         tv.showYouself()
         bx.showYouself()
+    }
+    
+    // 状态模式
+    func state() {
+        let happy = State(mood: .happy)
+        let programmer = ProgrammerA(happy)
+        programmer.programming()
+        
+        let sad = State(mood: .sad)
+        programmer.state = sad
+        programmer.programming()
+        
+        let normal = State(mood: .normal)
+        programmer.state = normal
+        programmer.programming()
     }
 }
 
