@@ -38,6 +38,8 @@ class ViewController: UIViewController {
         adpater()
         // 备忘录模式
         memento()
+        // 组合模式
+        composite()
     }
     
     // 策略模式
@@ -196,6 +198,22 @@ class ViewController: UIViewController {
         
         roll.restoreState(mementoState)
         print(dump(roll))
+    }
+    
+    // 组合模式
+    func composite() {
+        // 单个对象可以单独使用draw函数，也可以组合到一起，使用组合后的draw
+        let a = Circle()
+        let b = Square()
+        let c = Triangle()
+        
+        a.draw()
+        b.draw()
+        c.draw()
+        
+        let p = Print()
+        p.addDrawer(a, b, c)
+        p.draw()
     }
 }
 

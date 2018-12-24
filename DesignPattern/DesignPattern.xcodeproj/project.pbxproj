@@ -25,6 +25,7 @@
 		8CAEC31321CCF39B005A6320 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC31221CCF39B005A6320 /* State.swift */; };
 		8CAEC31521CCF629005A6320 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC31421CCF629005A6320 /* Adapter.swift */; };
 		8CAEC31721D0805D005A6320 /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC31621D0805D005A6320 /* Memento.swift */; };
+		8CAEC31921D08278005A6320 /* Composite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC31821D08278005A6320 /* Composite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		8CAEC31221CCF39B005A6320 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		8CAEC31421CCF629005A6320 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		8CAEC31621D0805D005A6320 /* Memento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
+		8CAEC31821D08278005A6320 /* Composite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				8CAEC31221CCF39B005A6320 /* State.swift */,
 				8CAEC31421CCF629005A6320 /* Adapter.swift */,
 				8CAEC31621D0805D005A6320 /* Memento.swift */,
+				8CAEC31821D08278005A6320 /* Composite.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				8CAEC30F21CCDE05005A6320 /* Observer.swift in Sources */,
 				8C64D9A621CCC6F700C20710 /* Proxy.swift in Sources */,
 				8CAEC31721D0805D005A6320 /* Memento.swift in Sources */,
+				8CAEC31921D08278005A6320 /* Composite.swift in Sources */,
 				8CAEC30D21CCDB7F005A6320 /* Builder.swift in Sources */,
 				8CAEC31521CCF629005A6320 /* Adapter.swift in Sources */,
 			);
