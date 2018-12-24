@@ -36,6 +36,8 @@ class ViewController: UIViewController {
         state()
         // 适配器模式
         adpater()
+        // 备忘录模式
+        memento()
     }
     
     // 策略模式
@@ -178,6 +180,22 @@ class ViewController: UIViewController {
         adapterB.s()
         adapterB.d()
         adapterB.w()
+    }
+    
+    // 备忘录模式
+    func memento() {
+        let state = RollState(life: 100, blue: 100) // 初始化角色
+        let roll = Roll(state)
+        
+        let mementoState = roll.saveState()
+        
+        print(dump(roll))
+        
+        roll.kill()
+        print(dump(roll))
+        
+        roll.restoreState(mementoState)
+        print(dump(roll))
     }
 }
 
