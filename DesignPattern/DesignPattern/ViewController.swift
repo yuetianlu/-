@@ -42,6 +42,8 @@ class ViewController: UIViewController {
         composite()
         // 迭代器模式
         iterator()
+        // 单例模式
+        singleton()
     }
     
     // 策略模式
@@ -226,6 +228,17 @@ class ViewController: UIViewController {
         for _ in 1...10 {
             print((iterator.next()?.index)!)
         }
+    }
+    
+    // 单例模式
+    func singleton() {
+        let single = Singleton.share
+        
+        print(single.index)
+        single.index = 100
+        print(single.index)
+        
+        print(Singleton.share.index)
     }
 }
 

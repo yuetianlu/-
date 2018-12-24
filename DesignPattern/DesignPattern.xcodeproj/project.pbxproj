@@ -27,6 +27,7 @@
 		8CAEC31721D0805D005A6320 /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC31621D0805D005A6320 /* Memento.swift */; };
 		8CAEC31921D08278005A6320 /* Composite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC31821D08278005A6320 /* Composite.swift */; };
 		8CAEC31B21D087AD005A6320 /* Lterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC31A21D087AD005A6320 /* Lterator.swift */; };
+		8CAEC31D21D08A33005A6320 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC31C21D08A33005A6320 /* Singleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		8CAEC31621D0805D005A6320 /* Memento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
 		8CAEC31821D08278005A6320 /* Composite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
 		8CAEC31A21D087AD005A6320 /* Lterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lterator.swift; sourceTree = "<group>"; };
+		8CAEC31C21D08A33005A6320 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				8CAEC31621D0805D005A6320 /* Memento.swift */,
 				8CAEC31821D08278005A6320 /* Composite.swift */,
 				8CAEC31A21D087AD005A6320 /* Lterator.swift */,
+				8CAEC31C21D08A33005A6320 /* Singleton.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CAEC31121CCE8A7005A6320 /* AbstractFactory.swift in Sources */,
+				8CAEC31D21D08A33005A6320 /* Singleton.swift in Sources */,
 				8CAEC30B21CCD8A3005A6320 /* Facade.swift in Sources */,
 				8C64D98F21CCBA5600C20710 /* ViewController.swift in Sources */,
 				8C64D9A321CCC31000C20710 /* Decorator.swift in Sources */,
