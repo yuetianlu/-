@@ -46,6 +46,8 @@ class ViewController: UIViewController {
         singleton()
         // 桥接模式
         bridge()
+        // 命令s模式
+        command()
     }
     
     // 策略模式
@@ -253,6 +255,18 @@ class ViewController: UIViewController {
         control.open() // 打开地图
         control.app = camera
         control.open()
+    }
+    // 命令模式
+    func command() {
+        let door = Doors(name: "客厅门")
+        let open = DoorAction(.open, door: door)
+        let close = DoorAction(.close, door: door)
+        let lock = DoorAction(.lock, door: door)
+        let unlock = DoorAction(.unlock, door: door)
+        
+        let maneger = DoorManager()
+        maneger.add(open, close, lock, unlock)
+        maneger.execute()
     }
 }
 
