@@ -56,6 +56,8 @@ class ViewController: UIViewController {
         flyweight()
         // 解释器模式
         interpreter()
+        // 访问者模式
+        visitor()
     }
     
     // 策略模式
@@ -324,6 +326,19 @@ class ViewController: UIViewController {
         
         let result2: String = StringInterpreter.interpreter(input: "14+14")
         print(result2)
+    }
+    // 访问者模式
+    func visitor() {
+        // 分别创建出朋友
+        let friends: [FriendProtocol] = [FriendA(), FriendB(), FriendC(), FriendD()]
+        // 每个朋友都去访问
+        let visitors = friends.map{(friend: FriendProtocol) -> Visitor in
+            let visitor = Visitor()
+            // 访问过后，自己的数据就变了
+            friend.accept(visitor)
+            return visitor
+        }
+        print(dump(visitors))
     }
 }
 
