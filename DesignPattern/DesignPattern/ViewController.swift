@@ -40,6 +40,8 @@ class ViewController: UIViewController {
         memento()
         // 组合模式
         composite()
+        // 迭代器模式
+        iterator()
     }
     
     // 策略模式
@@ -214,6 +216,16 @@ class ViewController: UIViewController {
         let p = Print()
         p.addDrawer(a, b, c)
         p.draw()
+    }
+    
+    // 迭代器模式
+    func iterator() {
+        let algorithm: Algorithm = Algorithm(index:10)
+        
+        var iterator = algorithm.makeIterator()
+        for _ in 1...10 {
+            print((iterator.next()?.index)!)
+        }
     }
 }
 
