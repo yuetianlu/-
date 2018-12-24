@@ -44,6 +44,8 @@ class ViewController: UIViewController {
         iterator()
         // 单例模式
         singleton()
+        // 桥接模式
+        bridge()
     }
     
     // 策略模式
@@ -239,6 +241,18 @@ class ViewController: UIViewController {
         print(single.index)
         
         print(Singleton.share.index)
+    }
+    
+    // 桥接模式
+    func bridge() {
+        let map = Map()
+        let camera = Camera()
+        
+        // 把对应app给控制类，运行控制类的抽象接口m，则会运行app的接口实现
+        let control = Control(map)
+        control.open() // 打开地图
+        control.app = camera
+        control.open()
     }
 }
 
