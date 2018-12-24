@@ -54,6 +54,8 @@ class ViewController: UIViewController {
         mediator()
         // 享元模式
         flyweight()
+        // 解释器模式
+        interpreter()
     }
     
     // 策略模式
@@ -314,6 +316,14 @@ class ViewController: UIViewController {
         
         let commodity2 = shop.buyCommodity("电视")
         print(commodity2)
+    }
+    // 解释器模式
+    func interpreter() {
+        let result: Int = IntInterpreter.interpreter(input: "14+14")
+        print(result)
+        
+        let result2: String = StringInterpreter.interpreter(input: "14+14")
+        print(result2)
     }
 }
 
