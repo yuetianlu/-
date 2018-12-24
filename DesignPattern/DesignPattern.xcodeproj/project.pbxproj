@@ -32,6 +32,8 @@
 		8CAEC32121D08DB1005A6320 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC32021D08DB1005A6320 /* Command.swift */; };
 		8CAEC32321D09AB5005A6320 /* ChainOfResponsibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC32221D09AB5005A6320 /* ChainOfResponsibility.swift */; };
 		8CAEC32521D09E74005A6320 /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC32421D09E74005A6320 /* Mediator.swift */; };
+		8CAEC32721D0AC7F005A6320 /* Flyweight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC32621D0AC7F005A6320 /* Flyweight.swift */; };
+		8CAEC32921D0C792005A6320 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC32821D0C792005A6320 /* Interpreter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		8CAEC32021D08DB1005A6320 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		8CAEC32221D09AB5005A6320 /* ChainOfResponsibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfResponsibility.swift; sourceTree = "<group>"; };
 		8CAEC32421D09E74005A6320 /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
+		8CAEC32621D0AC7F005A6320 /* Flyweight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyweight.swift; sourceTree = "<group>"; };
+		8CAEC32821D0C792005A6320 /* Interpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 				8CAEC32021D08DB1005A6320 /* Command.swift */,
 				8CAEC32221D09AB5005A6320 /* ChainOfResponsibility.swift */,
 				8CAEC32421D09E74005A6320 /* Mediator.swift */,
+				8CAEC32621D0AC7F005A6320 /* Flyweight.swift */,
+				8CAEC32821D0C792005A6320 /* Interpreter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -203,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CAEC32921D0C792005A6320 /* Interpreter.swift in Sources */,
 				8CAEC31121CCE8A7005A6320 /* AbstractFactory.swift in Sources */,
 				8CAEC31D21D08A33005A6320 /* Singleton.swift in Sources */,
 				8CAEC30B21CCD8A3005A6320 /* Facade.swift in Sources */,
@@ -217,6 +224,7 @@
 				8CAEC31321CCF39B005A6320 /* State.swift in Sources */,
 				8CAEC30F21CCDE05005A6320 /* Observer.swift in Sources */,
 				8C64D9A621CCC6F700C20710 /* Proxy.swift in Sources */,
+				8CAEC32721D0AC7F005A6320 /* Flyweight.swift in Sources */,
 				8CAEC32521D09E74005A6320 /* Mediator.swift in Sources */,
 				8CAEC31F21D08B4D005A6320 /* Bridge.swift in Sources */,
 				8CAEC31721D0805D005A6320 /* Memento.swift in Sources */,

@@ -52,6 +52,8 @@ class ViewController: UIViewController {
         chainOfResponsibility()
         // 中介者模式
         mediator()
+        // 享元模式
+        flyweight()
     }
     
     // 策略模式
@@ -303,6 +305,15 @@ class ViewController: UIViewController {
         let robot1 = company.create() as! Robots
         print(robot1.createFrom+"制造的机器人\(robot1.name)，采用的是"+robot1.steel.createFrom+"生产的"+robot1.steel.name+"！")
         //成都机器人公司制造的机器人阿狸机器人，采用的是劣质钢铁厂生产的劣质钢材！
+    }
+    // 享元模式
+    func flyweight(){
+        let shop = GroceryStore()
+        let commodity1 = shop.buyCommodity("电视")
+        print(commodity1)
+        
+        let commodity2 = shop.buyCommodity("电视")
+        print(commodity2)
     }
 }
 
