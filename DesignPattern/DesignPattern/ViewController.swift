@@ -46,8 +46,12 @@ class ViewController: UIViewController {
         singleton()
         // 桥接模式
         bridge()
-        // 命令s模式
+        // 命令模式
         command()
+        // 职责链模式
+        chainOfResponsibility()
+        // 中介者模式
+        mediator()
     }
     
     // 策略模式
@@ -267,6 +271,38 @@ class ViewController: UIViewController {
         let maneger = DoorManager()
         maneger.add(open, close, lock, unlock)
         maneger.execute()
+    }
+    
+    // 职责链模式
+    func chainOfResponsibility(){
+        let stu1 = Student(name:"小明", canAnswerQuestion:"1+1", next:nil)
+        let stu2 = Student(name:"小黄", canAnswerQuestion:"1*2", next:stu1)
+        let stu3 = Student(name:"小芳", canAnswerQuestion:"2*2", next:stu2)
+        let stu4 = Student(name:"小辉", canAnswerQuestion:"3*2", next:stu3)
+        
+        stu4.answerQuestion("3*2")
+        stu4.answerQuestion("2*2")
+        stu4.answerQuestion("1*2")
+        stu4.answerQuestion("1+1")
+        stu4.answerQuestion("3*3")
+    }
+    // 中介者模式
+    func mediator() {
+        let factory = SteelFactory("成都钢铁厂")
+        let factoryLow = SteelFactoryLow("劣质钢铁厂")
+        let mediator = Mediator(factory)
+        let company = RobotCompany(mediator, name: "成都机器人公司")
+        // 开始制造
+        let robot = company.create() as! Robots
+        
+        print(robot.createFrom + "制造的机器人\(robot.name), 采用的是" + robot.steel.createFrom + "生产的" + robot.steel.name + "!")
+        //成都机器人公司制造的机器人阿狸机器人，采用的是成都钢铁厂生产的优质钢材！
+        //中介者更换了钢铁厂，钢铁厂和机器人公司是没有引用的
+        
+        mediator.steelFactory = factoryLow
+        let robot1 = company.create() as! Robots
+        print(robot1.createFrom+"制造的机器人\(robot1.name)，采用的是"+robot1.steel.createFrom+"生产的"+robot1.steel.name+"！")
+        //成都机器人公司制造的机器人阿狸机器人，采用的是劣质钢铁厂生产的劣质钢材！
     }
 }
 

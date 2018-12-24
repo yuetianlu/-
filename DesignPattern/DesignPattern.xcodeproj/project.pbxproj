@@ -30,6 +30,8 @@
 		8CAEC31D21D08A33005A6320 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC31C21D08A33005A6320 /* Singleton.swift */; };
 		8CAEC31F21D08B4D005A6320 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC31E21D08B4D005A6320 /* Bridge.swift */; };
 		8CAEC32121D08DB1005A6320 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC32021D08DB1005A6320 /* Command.swift */; };
+		8CAEC32321D09AB5005A6320 /* ChainOfResponsibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC32221D09AB5005A6320 /* ChainOfResponsibility.swift */; };
+		8CAEC32521D09E74005A6320 /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEC32421D09E74005A6320 /* Mediator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		8CAEC31C21D08A33005A6320 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		8CAEC31E21D08B4D005A6320 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
 		8CAEC32021D08DB1005A6320 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		8CAEC32221D09AB5005A6320 /* ChainOfResponsibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfResponsibility.swift; sourceTree = "<group>"; };
+		8CAEC32421D09E74005A6320 /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 				8CAEC31C21D08A33005A6320 /* Singleton.swift */,
 				8CAEC31E21D08B4D005A6320 /* Bridge.swift */,
 				8CAEC32021D08DB1005A6320 /* Command.swift */,
+				8CAEC32221D09AB5005A6320 /* ChainOfResponsibility.swift */,
+				8CAEC32421D09E74005A6320 /* Mediator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -211,12 +217,14 @@
 				8CAEC31321CCF39B005A6320 /* State.swift in Sources */,
 				8CAEC30F21CCDE05005A6320 /* Observer.swift in Sources */,
 				8C64D9A621CCC6F700C20710 /* Proxy.swift in Sources */,
+				8CAEC32521D09E74005A6320 /* Mediator.swift in Sources */,
 				8CAEC31F21D08B4D005A6320 /* Bridge.swift in Sources */,
 				8CAEC31721D0805D005A6320 /* Memento.swift in Sources */,
 				8CAEC31B21D087AD005A6320 /* Lterator.swift in Sources */,
 				8CAEC31921D08278005A6320 /* Composite.swift in Sources */,
 				8CAEC30D21CCDB7F005A6320 /* Builder.swift in Sources */,
 				8CAEC31521CCF629005A6320 /* Adapter.swift in Sources */,
+				8CAEC32321D09AB5005A6320 /* ChainOfResponsibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
