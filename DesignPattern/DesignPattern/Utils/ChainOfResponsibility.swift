@@ -25,13 +25,7 @@ struct Student: QuestionProtocol {
     func answerQuestion(_ question: String) {
         switch question {
         case canAnswerQuestion:
-            print("\(name)回答： 1 + 1 = 2")
-        case canAnswerQuestion:
-            print("\(name)回答： 1 * 2 = 2")
-        case canAnswerQuestion:
-            print("\(name)回答： 2 * 2 = 4")
-        case canAnswerQuestion:
-            print("\(name)回答： 3 * 2 = 5")
+            print("\(name)回答： \(canAnswerQuestion)")
         default:
             if let next = next {
                 next.answerQuestion(question)
